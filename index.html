@@ -130,12 +130,21 @@
 <font color:#ffffff>
 <div class="textwidget widget_footer"><u>Address</u><br>Dhandapani Fan House<br>936,Park Road<br>Near IOB Main Branch, opp. to Ellai Mariamman Temple<br>Erode-638003<br>Tamilnadu<br><br><u>Phone</u><br>+91 93641 00044<br>0424 2214361<br><nav><a href="mailto:erodedfh@gmail.com">erodedfh@gmail.com</a></nav><br><br>
 
-<form name="contact" netlify>
+<form name="contact" method="POST" data-netlify="true">
   <p>
-    <label>Name <input type="text" name="name" /></label>
+    <label>Your Name: <input type="text" name="name" /></label>   
   </p>
   <p>
-    <label>Query<input type="query" name="text" /></label>
+    <label>Your Email: <input type="email" name="email" /></label>
+  </p>
+  <p>
+    <label>Your Role: <select name="role[]" multiple>
+      <option value="leader">Leader</option>
+      <option value="follower">Follower</option>
+    </select></label>
+  </p>
+  <p>
+    <label>Message: <textarea name="message"></textarea></label>
   </p>
   <p>
     <button type="submit">Send</button>
