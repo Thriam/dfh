@@ -1,7 +1,4 @@
-/* 
-Together-2
- */
- body{
+body{
 	background:#000000;
 	margin:2%;
 	font-size: 150%;
@@ -58,13 +55,13 @@ summary{
 
 details{
 	font-style: italic;
-	font-color: white;
+	color: white;
 }
 
 footer{
-	background: #00b7ea;
 	height:100px;
 	clear: both;
+	color:white;
 }
 
 img{
